@@ -1,0 +1,75 @@
+/*this is main.scss file, you may edit this file in order to manipulate
+styles in the application*/
+
+//Loading screen
+
+.Loading-icon {
+    animation: Loading-logo-spin infinite 2s;
+    font-size: 4em !important;
+  }
+
+  @keyframes Loading-logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+//React Logo
+.reactLogo {
+  animation: App-logo-spin infinite 5s linear;
+  height: 100px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//Error screen
+.Gear-icon-right {
+    animation: Gear-icon-right infinite linear 15s;
+    font-size: 10em !important;
+    margin-bottom: 15px;
+    margin-right: -15px;
+  }
+
+  @keyframes Gear-icon-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+  .Gear-icon-left {
+    animation: Gear-icon-left infinite linear 5s;
+    font-size: 5em !important;
+    margin-left: -15px;
+  }
+
+  @keyframes Gear-icon-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }
+  
