@@ -7,9 +7,6 @@ import Grid from '@material-ui/core/Grid';
 //import assets
 import Logo from "../../../../assets/images/reactLogo.png";
 
-//import login
-import Login from "../../components/loginComponent/LoginPanelContainer";
-
 //import components
 import BreadCrumbsComponent from "./components/BreadCrumbsComponent";
 
@@ -44,8 +41,7 @@ class LandingPageComponent extends React.Component{
               xs={6}
               style={styles.gridCenter}
               >
-                    <img src={Logo} height={100}/>
-                    <Login/>
+                    <img src={Logo} className={"reactLogo"}/>
               </Grid>
               <Grid item xs={6}>
                 <BreadCrumbsComponent
