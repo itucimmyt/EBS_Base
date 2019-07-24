@@ -22,10 +22,7 @@ export default function SimpleTable({data}) {
   const classes = useStyles();
 
   const tableHeaders = [
-    "A",
-    "B",
-    "C",
-    "D"
+    "Hello headers!"
   ];
   
   const tableBody = (
