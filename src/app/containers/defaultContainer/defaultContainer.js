@@ -3,8 +3,11 @@ import React from 'react';
 //import clients
 import _myClient from "../../../clients/clientDefault/clientDefault";
 
-//import components
+//import default components
 import LoadingComponent from "../../components/LoadingComponent";
+
+//import components
+import TableComponent from "./components/DefaultTableComponent";
 
 //create client objects
 const myClient = new _myClient();
@@ -31,7 +34,9 @@ class DefaultContainer extends React.Component{
     let myData = this.state.data === undefined ?
     (<LoadingComponent/>)
     :
-    (<h1>Data!</h1>)
+    (<TableComponent
+      data = {this.state.data}
+    />)
 
     return(
       <React.Fragment>
