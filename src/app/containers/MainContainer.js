@@ -12,7 +12,8 @@ class Master extends React.Component {
   constructor() {
     super();
     this.state = {
-      tab: "landing"
+      tab: "landing",
+      componentName : "masterContainer"
     }
     this.changeTab = this.changeTab.bind(this);
   }
@@ -38,9 +39,7 @@ class Master extends React.Component {
     the change tab funcionality inside your container*/
     switch (this.state.tab) {
         case "landing":
-            content = <LandingPageContainer
-                        changeTab = {this.changeTab}
-                        />
+            content = <DefaultContainer/>
             break;
         case "dashboard":
             content = <DashboardContainer />
