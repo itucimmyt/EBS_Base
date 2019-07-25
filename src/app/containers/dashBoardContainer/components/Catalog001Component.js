@@ -15,7 +15,7 @@ export default function PaperSheet({entity001}) {
   return (
     <div>
       <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
+        <Typography foo="bar" variant="h5" component="h3">
           This is your Catalog001 Component
         </Typography>
       </Paper>

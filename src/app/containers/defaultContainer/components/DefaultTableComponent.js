@@ -22,10 +22,7 @@ export default function SimpleTable({data}) {
   const classes = useStyles();
 
   const tableHeaders = [
-    "A",
-    "B",
-    "C",
-    "D"
+    "Hello headers!"
   ];
   
   const tableBody = (
@@ -50,10 +47,8 @@ export default function SimpleTable({data}) {
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
-        <TableBody>
           {tableHead}
           {tableBody}
-        </TableBody>
       </Table>
     </Paper>
   );
